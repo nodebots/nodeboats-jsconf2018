@@ -9,6 +9,11 @@ There will be two different boat models that each team can make as part of the N
 Each boat kit will include the following materials. Make sure you let us know if any components are missing! (Please also keep in mind that we do need the parts back at the end of the day!)
 
 #### Boat Kits
+- TBD
+- TBD
+- TBD
+- TBD
+- TBD
 
 #### Things you may need (And We Have!!!)
 - Goopy goo glue sealant
@@ -25,5 +30,13 @@ Each boat kit will include the following materials. Make sure you let us know if
 ### Resources for Building Your Boat!
 
 You may need some help while setting up your NodeBoat. Here are some tips and tricks so you can learn from our experiences:
+- TBD
+- TBD
+- TBD
+- TBD
 
 First Time Using Johnny-Five? Don't hesitate to ask us for help! That's why we're here. Here are some intro materials and parts of the docs that will be particularly helpful while building your boats:
+- TBD
+- TBD
+- TBD
+- TBD
