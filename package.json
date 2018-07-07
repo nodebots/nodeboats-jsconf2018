@@ -1,0 +1,32 @@
+{
+  "name": "nodeboats-jsconf2018",
+  "version": "0.1.0",
+  "description": "NodeBoats example repo",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opheliasdaisies/nodeboats-jsconf2018.git"
+  },
+  "keywords": [
+    "nodeboats",
+    "johnny-five",
+    "arduino",
+    "hardware"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opheliasdaisies/nodeboats-jsconf2018/issues"
+  },
+  "homepage": "https://github.com/opheliasdaisies/nodeboats-jsconf2018#readme",
+  "dependencies": {
+    "johnny-five": "^0.15.0",
+    "keypress": "^0.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.0.1"
+  }
+}
