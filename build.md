@@ -38,5 +38,5 @@ The L-shaped connector included in the kit can be used as a rudder and/or mount 
 - Before drilling a hole in the boat hull to pass through the wires from the motor pod, it is strongly recommended that you put all of your components in the boat first, to test the bouyancy and add the appropriate amount of styrafoam to the boat.
 - If you drill a hole in your boat hull that could possibly be submerged, make sure you seal it well! After your wires are properly positioned through the hole, apply waterproof sealant to both sides of the hole and allow it to dry before testing it in the water.
 - Servos are not waterproof! Make sure to keep them out of the water!
-- The motors we're using are brushless motors and can go underwater, like magic! Don't worry about submerging these, but also know that standard brushed motors can't be.
+- The motors we're using are [brushless motors](https://www.renesas.com/us/en/support/technical-resources/engineer-school/brushless-dc-motor-01-overview.html) and can go underwater, like magic! Don't worry about submerging these, but also know that standard brushed motors can't be.
 - If you need to extend any jumper wires, we have heat shrink tubing which can form a watertight seal and help you join them.
