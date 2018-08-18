@@ -23,6 +23,7 @@ Each boat kit will include the following materials. Make sure you let us know if
 - Brushless Motor
 - Propellor
 - L-shaped connector
+- Boat Hull (aka Plastic Takeout Boxes)
 
 #### Things you may need (And We Have!!!)
 
@@ -36,6 +37,8 @@ Each boat kit will include the following materials. Make sure you let us know if
 - A drill
 - Box cutters
 - Googly eyes
+- Feathers
+- Mini Pool Floaties
 
 ### Configuring the Arduino Nano & HC-06 Bluetooth module
 
