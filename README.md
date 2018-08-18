@@ -42,11 +42,13 @@ Each boat kit will include the following materials. Make sure you let us know if
 
 ### Configuring the Arduino Nano & HC-06 Bluetooth module
 
-To avoid using extemely long USB cables to drive the boats from the water to your laptops, the HC-06 Bluetooth module will allow you to run Johnny-Five commands wirelessly to the Arduino Nano. The Nodeboats team has pre-configured the modules to do this, so the following instructions are useful if you are building the boat at home later or need to reconfigure the module. They are based on the [HC-05 configuration docs](https://github.com/rwaldron/johnny-five/wiki/Getting-Started-with-Johnny-Five-and-HC-05-Bluetooth-Serial-Port-Module) with some key changes for the HC-06 and this workshop. Skip to step 4 and 5 to learn about pairing the module with your laptop.
+To avoid using extemely long USB cables to drive the boats from the water to your laptops, the HC-06 Bluetooth module will allow you to run Johnny-Five commands wirelessly to the Arduino Nano. The NodeBoats team has pre-configured the modules to do this, so the following instructions are useful if you are building the boat at home later or need to reconfigure the module. They are based on the [HC-05 configuration docs](https://github.com/rwaldron/johnny-five/wiki/Getting-Started-with-Johnny-Five-and-HC-05-Bluetooth-Serial-Port-Module) with some key changes for the HC-06 and this workshop.
+
+**For the workshop, you can [skip to steps 4 and 5](https://github.com/opheliasdaisies/nodeboats-jsconf2018#step-4-wire-the-module-to-the-arduinos-hardware-port) to learn about pairing the pre-configured module with your laptop.**
 
 #### Step 1: Connect the HC-05 module to the Arduino for configuration
 
-We will program the Arduino to send AT commands to the module to configure it via a SoftwareSerial connection. Wire the TX and RX pins of your module to your Arduino. They need wired in a crossover configuration, so from the module to the Arduino wire TX to pin 10 and RX to pin 11.
+We will program the Arduino to send AT commands to the module to configure it via a SoftwareSerial connection. Wire the TX (transmit) and RX (receive) pins of your module to your Arduino. They need to be wired in a crossover configuration, so from the module to the Arduino wire TX to pin 10 and RX to pin 11. (For the purpose of configuring the Bluetooth module, pin 10 is used as RX on the Arduino, and pin 11 is used as TX. Later, when running Johnny-Five code, we'll use the pins labeled TX and RX on the arduino.)
 
 ![Arduino Nano to HC-06 Bluetooth breadboard](./diagrams/Nano-HC06-config_bb.png)
 
@@ -144,9 +146,9 @@ The setup() function will take about 6 seconds to run. You can connect to the Ar
 
 ```
 
-If you saw that congratulations, you're done this step.
+If you saw that, congratulations! You're done with this step.
 
-If you see the following output instead, you will probably have to change BLUETOOTH_SPEED to another value and upload it again. This could be because the HC-06 chip had different baud rate.
+If you see the following output instead, you will probably have to change BLUETOOTH_SPEED to another value and upload it again. This could be because the HC-06 chip had a different baud rate.
 
 ```
 
@@ -160,24 +162,24 @@ If you see the following output instead, you will probably have to change BLUETO
 
 ```
 
-If you are having troubles uploading the firmata firmware to the device, make sure that nothing is connected to pins 0 and 1 when uploading as this can interfere with the upload process.
+If you are having trouble uploading the firmata firmware to the device, make sure that nothing is connected to pins 0 and 1 when uploading, as this can interfere with the upload process.
 
 
-#### Step 3: Reupload StandardFirmataPlus
+#### Step 3: Re-upload StandardFirmataPlus
 
-Once the baud rate is properly set, re upload the StandardFirmataPlus sketch to your board. If you don't do this it might seems that your bluetooth module is getting a connection, the light will stop blinking, but you won't be able to connect.
+Once the baud rate is properly set, re-upload the StandardFirmataPlus sketch to your board. If you don't do this it might seem that your bluetooth module is getting a connection and the light will stop blinking, but you won't be able to connect.
 
 You can upload StandardFirmataPlus through the [Arduino IDE](https://www.instructables.com/id/Arduino-Installing-Standard-Firmata/) or using [firmata-party](https://www.npmjs.com/package/firmata-party) from the command line.
 
 #### Step 4: Wire the module to the Arduino's hardware port
 
-Once the baud rate is properly set & Firmata reloaded, connect the TX and RX pins to Arduino pins RX0 and TX1 respectively.
+Once the baud rate is properly set & Firmata reloaded, which has already been done for you for the workshop, connect the TX and RX pins to Arduino pins RX0 and TX1 respectively.
 
 ![Arduino Nano to HC-06 hookup](./diagrams/Nano-HC06-working_bb.png)
 
 #### Step 5: Pair the module
 
-Pair to the module from your host device, once you have paired with your bluetooth device the serial port should be visible with the 'ROBOT_NAME' you used in Step 1. It will be something like /dev/tty.ROBOT_NAME-SPPDev (in UNIX) and use COMX in Windows (where X is the number of the port). Use this name to tell [Johnny-Five which port to use](http://johnny-five.io/api/board/#component-initialization).
+Pair to the module from your host device. Once you have paired with your bluetooth device the serial port should be visible with the 'ROBOT_NAME' used in Step 1. (If you're in the workshop at JS Conf, the 'ROBOT_NAME' will be labeled on your module when you receive it.) It will be something like /dev/tty.ROBOT_NAME-SPPDev (in UNIX) and use COMX in Windows (where X is the number of the port). Use this name to tell [Johnny-Five which port to use](http://johnny-five.io/api/board/#component-initialization).
 
 You can test the connection by modifying the `blink.js` program to add the path to the Bluetooth port and running the program. Make sure Johnny-Five is installed in the `code` directory (`npm install`) before running `node code/blink.js`. 
 
