@@ -200,3 +200,11 @@ First Time Using Johnny-Five? Don't hesitate to ask us for help! That's why we'r
 - [Servo class API](http://johnny-five.io/api/servo/)
 - [Controlling Johnny-Five with `keypress`](https://gist.github.com/goldsamantha/1fd9ba71c398e8a06fd319cac05cf022)
 - [Controlling Johnny-Five with Express & Socket.io](https://learn.sparkfun.com/tutorials/reconbot-with-the-tessel-2)
+
+### Examples
+
+These are a few examples of boats that the Nodeboats Team has built to show the variety of design and creativity that can go into creating your vessel.
+
+![Captain Sammy](./images/sammy-nodeboat.jpg)
+
+![AJ Nodeboat](./images/aj-nodeboat.jpg)
