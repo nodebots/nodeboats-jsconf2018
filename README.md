@@ -179,7 +179,7 @@ Once the baud rate is properly set & Firmata reloaded, which has already been do
 
 #### Step 5: Pair the module
 
-Pair to the module from your host device. Once you have paired with your bluetooth device the serial port should be visible with the 'ROBOT_NAME' used in Step 1. (If you're in the workshop at JS Conf, the 'ROBOT_NAME' will be labeled on your module when you receive it.) It will be something like /dev/tty.ROBOT_NAME-SPPDev (in UNIX) and use COMX in Windows (where X is the number of the port). Use this name to tell [Johnny-Five which port to use](http://johnny-five.io/api/board/#component-initialization).
+Pair to the module from your host device. Once you have paired with your bluetooth device the serial port should be visible with the 'ROBOT_NAME' used in Step 1. (If you're in the workshop at JS Conf, the 'ROBOT_NAME' will be labeled on your module when you receive it, and the pin code will be 1234.) It will be something like /dev/tty.ROBOT_NAME-SPPDev (in UNIX) and use COMX in Windows (where X is the number of the port). Use this name to tell [Johnny-Five which port to use](http://johnny-five.io/api/board/#component-initialization).
 
 You can test the connection by modifying the `blink.js` program to add the path to the Bluetooth port and running the program. Make sure Johnny-Five is installed in the `code` directory (`npm install`) before running `node code/blink.js`. 
 
